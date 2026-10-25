@@ -10,11 +10,8 @@ class Solution:
             
             if (r,c) in visited:
                 return visited[(r,c)]
-
-            right=dfs(r+1,c)
-            down=dfs(r,c+1)
-            diag=dfs(r+1,c+1)
-            visited[(r,c)]=min(right,down,diag)+1
+                
+            visited[(r,c)]=min(dfs(r+1,c),dfs(r,c+1),dfs(r+1,c+1))+1
 
             return visited[(r,c)]
         
