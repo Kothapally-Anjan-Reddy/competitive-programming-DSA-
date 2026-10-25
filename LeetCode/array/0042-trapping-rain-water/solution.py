@@ -1,35 +1,17 @@
 class Solution:
-    def trap(self, arr: List[int]) -> int:
-        if len(arr)<3:
-            return 0
-        l=0
+    def trap(self, height: list[int]) -> int:
+        max_right=[0]*len(height)
+        h=0
+        for i in range(len(height)-1,-1,-1):
+            max_right[i]=h
+            h=max(h,height[i])
+        
+        h=0
         water=0
-        while arr[l] and arr[l]==0:
-            l+=1
-        middle=0
-        r=l+1
-        while r<len(arr):
-            if arr[r]<arr[l]:
-                middle+=arr[r]
-                r+=1
-            else:
-                val=min(arr[r],arr[l])
-                water+=val*(r-l-1)-middle
-                middle=0
-                l=r
-                r+=1
-        left=l
-        r=len(arr)-1
-        l=r-1
-        middle=0
-        while l>=left:
-            if arr[l]<arr[r]:
-                middle+=arr[l]
-                l-=1
-            else:
-                val=min(arr[r],arr[l])
-                water+=val*(abs(r-l)-1)-middle
-                middle=0
-                r=l
-                l-=1
+        for i in range(len(height)):
+            res=min(h,max_right[i])-height[i]
+            if res>0:
+                water+=res
+            h=max(h,height[i])
+        
         return water
