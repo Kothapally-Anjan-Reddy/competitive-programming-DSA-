@@ -1,22 +1,13 @@
 class Solution:
     def countSquares(self, matrix: list[list[int]]) -> int:
         rows,columns=len(matrix),len(matrix[0])
-        visited={}
+        dp=defaultdict(int)
         res=0
-
-        def dfs(r,c):
-            if r not in range(rows) or c not in range(columns) or matrix[r][c]==0:
-                return 0
-            
-            if (r,c) in visited:
-                return visited[(r,c)]
-                
-            visited[(r,c)]=min(dfs(r+1,c),dfs(r,c+1),dfs(r+1,c+1))+1
-
-            return visited[(r,c)]
         
-        for row in range(rows):
-            for col in range(columns):
-                res+=dfs(row,col)
+        for r in range(rows):
+            for c in range(columns):
+                if matrix[r][c]:
+                    dp[(r,c)]=1+min(dp[r-1,c], dp[(r,c-1)], dp[(r-1,c-1)])
+                    res+=dp[(r,c)]
 
         return res
