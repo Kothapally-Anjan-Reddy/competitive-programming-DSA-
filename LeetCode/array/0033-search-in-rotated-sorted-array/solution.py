@@ -13,12 +13,12 @@ class Solution:
                 return m
             if nums[m]>=nums[l]:
                 if  target<nums[m] and target>=nums[l]:
-                    r=m
+                    r=m-1
                 else:
                     l=m+1
             else:
                 if target>nums[m] and target<=nums[r]:
                     l=m+1
                 else:
-                    r=m
+                    r=m-1
         return -1
