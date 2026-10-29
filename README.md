@@ -5,7 +5,7 @@
 
 Synced automatically by SolveSync.
 
-**Total solved:** 43
+**Total solved:** 44
 
 ## Codeforces
 
@@ -41,7 +41,7 @@ Solutions from the CSES Problem Set, organized by section.
 
 Solutions organized by difficulty rating.
 
-**Solved:** 43
+**Solved:** 44
 
 | Difficulty | Solved |
 | --- | --- |
@@ -66,7 +66,7 @@ Solutions organized by difficulty rating.
 | 1467 | 1 |
 | 1540 | 1 |
 | 1651 | 1 |
-| Unrated | 22 |
+| Unrated | 23 |
 
 ## AtCoder
 
