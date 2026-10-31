@@ -1,6 +1,6 @@
 class Solution:
     def restoreIpAddresses(self, s: str) -> list[str]:
-        if len(s)>12:return []
+        if len(s)>12 or len(s)<4:return []
         result=[]
 
         def backtrack(i,point,subset):
