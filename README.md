@@ -5,7 +5,7 @@
 
 Synced automatically by SolveSync.
 
-**Total solved:** 194
+**Total solved:** 195
 
 ## Codeforces
 
@@ -21,11 +21,11 @@ Solutions by Kothapally-Anjan-Reddy, organized by difficulty rating.
 
 Solutions organized by primary topic folder.
 
-**Solved:** 194
+**Solved:** 195
 
 | Topic | Solved |
 | --- | --- |
-| array | 104 |
+| array | 105 |
 | database | 3 |
 | design | 1 |
 | dynamic-programming | 1 |
@@ -78,5 +78,5 @@ Solutions from Repovive contests and practice.
 | --- | --- |
 | — | 0 |
 
-*Last updated: 2026-11-06*
+*Last updated: 2026-11-07*
 <!-- solvesync:end -->
