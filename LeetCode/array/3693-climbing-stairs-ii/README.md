@@ -8,7 +8,7 @@
 
 | Language | Runtime | Memory | Date | Submission |
 | --- | --- | --- | --- | --- |
-| [Python3](./solution.py) | 561 ms | 147 MB | 2026-03-07 | [link](https://leetcode.com/submissions/detail/1940647992/) |
+| [Python3](./solution.py) | 691 ms | 145.4 MB | 2026-11-10 | [link](https://leetcode.com/submissions/detail/2193427020/) |
 
 ## Problem
 
