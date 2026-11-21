@@ -5,7 +5,7 @@
 
 Synced automatically by SolveSync.
 
-**Total solved:** 207
+**Total solved:** 208
 
 ## Codeforces
 
@@ -21,7 +21,7 @@ Solutions by Kothapally-Anjan-Reddy, organized by difficulty rating.
 
 Solutions organized by primary topic folder.
 
-**Solved:** 207
+**Solved:** 208
 
 | Topic | Solved |
 | --- | --- |
@@ -32,7 +32,7 @@ Solutions organized by primary topic folder.
 | hash-table | 15 |
 | linked-list | 6 |
 | math | 12 |
-| misc | 12 |
+| misc | 13 |
 | stack | 2 |
 | string | 21 |
 | tree | 16 |
@@ -78,5 +78,5 @@ Solutions from Repovive contests and practice.
 | --- | --- |
 | — | 0 |
 
-*Last updated: 2026-11-20*
+*Last updated: 2026-11-21*
 <!-- solvesync:end -->
