@@ -1,9 +1,14 @@
 class Solution:
     def maxLength(self, nums: List[int]) -> int:
-        length=0
-        for i in range(len(nums)-1):
-            for j in range(i,len(nums)):
-                arr=nums[i:j+1]
-                if math.prod(arr) == (math.lcm(*arr) * math.gcd(*arr)):
-                    length=max(length,j-i+1)
+        prod=1
+        left=0
+        length=2
+
+        for right,num in enumerate(nums):
+            while gcd(prod,num)>1:
+                prod//=nums[left]
+                left+=1
+            prod*=num
+            length=max(length,right-left+1)
+        
         return length
